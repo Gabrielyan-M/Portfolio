@@ -715,13 +715,17 @@ header{
     background-color: var(--pronounced-background-color);
     box-shadow: var(--drop-box-shadow_10);
     -moz-box-shadow: var(--drop-box-shadow_10);
-    --webkit-box-shadow: var(--drop-box-shadow_10);
+    -webkit-box-shadow: var(--drop-box-shadow_10);
     border-radius: 60px;
     transform: translateY(20px);
     transition: 0.3s linear;
 }
 
-
+.card-link-contact:active {
+    box-shadow: var(--violet-inner-box-shadow);
+    -moz-box-shadow: var(--violet-inner-box-shadow);
+    -webkit-box-shadow: var(--violet-inner-box-shadow);
+}
 
 .card-link-contact::before {
     content: '';
@@ -751,7 +755,7 @@ header{
     .card-link-contact:hover {
         box-shadow: var(--violet-inner-box-shadow);
         -moz-box-shadow: var(--violet-inner-box-shadow);
-        --webkit-box-shadow: var(--violet-inner-box-shadow);
+        -webkit-box-shadow: var(--violet-inner-box-shadow);
     }
 
     .card-link-contact:hover::after {
