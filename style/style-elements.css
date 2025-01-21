@@ -670,8 +670,8 @@ header{
     font-size: clamp(1.5rem, 1.3725rem + 0.5229vw, 2rem);
     font-weight: var(--montserrat-weight-Light);
     color: var(--text-color);
-    transform: translateX(1vw) translateY(20px);
-    transition: 0.5s linear;
+    transform: translateX(1vw) translateY(40px);
+    transition: 0.5s linear
 }
 .skill-text:before {
     position: absolute;
@@ -733,7 +733,7 @@ header{
     position: absolute;
     right: -40px;
     content: '';
-    background-image: url(../media/contacts-media/copy-contact-svg.svg);
+    background-image: var(--copy-contact-svg);
     width: 40px;
     height: 40px;
     transition: 0.3s linear;
@@ -745,9 +745,6 @@ header{
 
 .card-link-gmail::before {
     background-image: url(../media/contacts-media/gmail-contact-svg.svg);
-}
-.card-link-tg::before {
-    background-image: url(../media/contacts-media/tg-contact-svg.svg);
 }
 
 @media (hover: hover) {
@@ -780,6 +777,18 @@ header{
     opacity: 0.3;
 }
 
+
+.lnik-copied-block {
+    position: fixed;
+    top: -90px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    transition: 0.5s linear;
+}
+
 .lnik-copied {
     display: flex;
     top: 30px;
@@ -807,6 +816,14 @@ header{
     font-weight: var(--montserrat-weight-Medium);
 
 }
+
+
+
+
+
+
+
+
 
 
 
