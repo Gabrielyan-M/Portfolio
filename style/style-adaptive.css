@@ -1,0 +1,429 @@
+
+@media screen and (min-width: 2000px) {
+    .card-container {
+        padding: 40px;
+    }
+} 
+
+@media screen and (max-width: 1600px) {
+    .list-skills {
+        width: 44vw;
+        max-width: 700px;
+    
+    }
+
+    .skill-text {
+        font-size: 1.5rem;
+    }
+
+    .contacts-links {
+        padding-left: 80px;
+    }
+
+    .contacts-links li {
+        font-size: 1.75rem;
+        padding: 5px 20px 5px 15px;
+    }
+}
+
+
+@media screen and (max-width: 1380px) {
+    .header-end {
+        gap: 3vw;
+    }
+
+    .anchor-button {
+        padding: 5px 25px;
+    }
+
+    .anchor-button > p {
+        font-size: 1.75rem;
+    }
+
+    .projects-section {
+        margin-top: 140px;
+    }
+
+    .card {
+        border-radius: 50px;
+    }
+
+    .card-container {
+        gap: 15px;
+    }
+
+    .image-card {
+        width: 200px;
+        height: 200px;
+        border-radius: 30px;
+    }
+
+    .image-card img {
+        width: 200px;
+    }
+
+    .description-card {
+        height: 200px;
+    }
+
+    .text-card > a:nth-child(1) {
+        font-size: 1.375rem;
+    }
+
+    .skills-container {
+        gap: 6vw;
+    }
+
+    .name-list-skills {
+        width: 100%;
+        height: 10vw;
+    }
+
+    .list-skills {
+        width: 40vw;
+    }
+
+    .contacts-links {
+        padding-left: 70px;
+    }
+
+    .contacts-links li {
+        font-size: 1.75rem;
+        padding: 5px 20px 5px 15px;
+    }
+
+    .contacts-links li::before {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+    }
+
+
+} 
+
+@media screen and (max-width: 1300px) {
+
+    .header-container {
+        padding: 0px 30px;
+    }
+
+    .header-name {
+        font-size: 2rem;
+    }
+
+    .anchor-button {
+        padding: 5px 20px;
+    }
+
+    .anchor-button > p {
+        font-size: 1.6rem;
+    }
+
+    .header-end {
+        gap: 1.5vw;
+    }
+
+    .text-card > a:nth-child(1) {
+        font-size: 1.2rem;   
+    }
+
+    .text-card > p {
+        font-size: 1rem;   
+    }
+
+    .text-card > a:nth-child(3) {
+        font-size: 1rem;   
+    }
+
+
+} 
+
+@media screen and (max-width: 1240px) {
+    .header-block {
+        width: 90vw;
+        height: 8vh;
+    }
+    .anchor-button > p {
+        font-size: 1.5rem;
+    }
+
+    .projects-cards-container {
+        width: 100%;
+        gap: 100px;
+    }
+
+    .card {
+        width: 260px;
+        border-radius: 45px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .image-card {
+        width: 220px;
+        height: 220px;
+        border-radius: 30px;
+    }
+
+    .image-card > img {
+        width: 220px;
+        border-radius: 30px;
+    }
+
+    .text-card > a:nth-child(1) {
+        font-size: 1.15rem;
+        text-align: center;
+    }
+    
+    .text-card > p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .text-card > a:nth-child(3) {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .link-project {
+        display: none;
+    }
+
+    .resources-block a {
+        display: flex;
+    }
+
+
+    .resources-block {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .resources-block ul {
+        width: auto;
+        gap: 10px;
+    }
+
+    .skill-text {
+        font-size: 1.25rem;
+    }
+    
+    
+
+} 
+
+
+
+@media screen and (max-width: 980px) {
+    .anchor-buttons {
+        gap: 5px;
+    }
+
+    .anchor-button {
+        padding: 5px 15px;
+    }
+
+    .projects-cards-container {
+        gap: 70px;
+    }
+
+    .card-link-contact::after {
+        right: -30px;
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;    
+    }
+    .contacts-links li {
+        font-size: 1.5rem;
+        padding: 5px 20px 5px 15px;
+    }
+
+    .contacts-links li::before {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .header-end {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        gap: 50px;
+        bottom: -410px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70vw;
+        padding: 50px;
+        border: 2px solid var(--violet-color_20);
+        border-radius: 40px;
+        background-color: var(--pronounced-background-color);
+        z-index: 1000;
+        transition: 0.5s linear;
+    }
+
+    .menuActive {
+        display: flex;
+    }
+
+    .anchor-buttons {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .anchor-button p {
+        opacity: 1;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .projects-cards-container {
+        gap: 55px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .header-block {
+        width: 90vw;
+        margin: 0px 0px;
+    }
+
+    .skill-text:before {
+        left: -2vw;
+    }
+
+    .contacts-links {
+        padding-left: 50px;
+    }
+
+    .contacts-links li {
+        font-size: 1.25rem;
+        padding: 5px 20px 5px 15px;
+    }
+
+    .contacts-links li::before {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    .container-header-section {
+        height: 100vh;
+    }
+
+    .header-block {
+        width: 90vw;
+        margin: 0px 0px;
+    }
+
+    .header-name {
+        font-size: 1.75rem;
+    }
+
+    .burger-menu {
+        width: 30px;
+    }
+
+    .can-scroll-line {
+        top: 400px;
+    }
+
+    .projects-section {
+        margin-top: 80px;
+    }
+
+    .name-section > h2 {
+        margin-left: 20px;
+    }
+
+    .projects-cards-container {
+        grid-template-columns: auto;
+        gap: 60px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    .list-skills {
+        width: 80vw;
+        gap: 60px;
+    }
+
+    .name-list-skills {
+        width: 80%;
+        height: 80px;
+    }
+
+    .list-skills-block ul {
+        gap: 35px;
+        width: 100vw;
+        max-width: 80%;
+        margin-left: 10%;
+    }
+
+    .skill-text {
+        font-size: 1.15rem;
+    } 
+
+    .card-link-contact::after {
+        opacity: 0.7;
+        right: -20px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    header {
+        margin-top: 0px;
+    }
+
+    .header-block {
+        width: 100vw;
+        border-radius: 0px;
+    }
+
+    .name-section > h2 {
+        margin-left: 10px;
+    }
+
+    .list-skills {
+        width: 85vw;
+    }
+    
+    .contacts-links {
+        padding-left: 20px;
+    }
+
+    .contacts-links ul {
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .contacts-links li {
+        font-size: 1rem;
+        padding: 3px 18px 3px 10px;
+    }
+
+    .contacts-links li::before {
+        width: 40px;
+        height: 40px;
+    }
+
+}

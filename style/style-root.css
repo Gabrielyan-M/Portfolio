@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Fira Code';
+    src: url('../fonts/Fira_Code/FiraCode-Regular.woff2') format('woff2'),
+         url('../fonts/Fira_Code/FiraCode-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* font-weight */
+    --fira-code-weight-Regular: normal;
+
+    --montserrat-weight-Light: 300;
+    --montserrat-weight-Regular: normal;
+    --montserrat-weight-Medium: 500;
+    --montserrat-weight-SemiBold: 600;
+    --montserrat-weight-Bold: bold;
+
+    /* colors   \\\ --name-color_% */
+    --black: rgb(0, 0, 0);
+    --black_60: rgba(0, 0, 0, 0.6);
+    --black_30: rgba(0, 0, 0, 0.3);
+    --black_20: rgba(0, 0, 0, 0.2);
+    --black_10: rgba(0, 0, 0, 0.1);
+
+    --black-color-070707: rgb(7, 7, 7);
+    --black-color-070707_15: rgba(7, 7, 7, 0.15);
+    --black-color-070707_0: rgba(7, 7, 7, 0);
+    --black-color-030303: rgb(3, 3, 3);
+    --black-color-0A0A0A: hwb(0 3% 97%);
+
+    --white: rgb(255, 255, 255);
+    --white_15: rgba(255, 255, 255, 0.15);
+    --dark-white-color_EBEBEB: rgb(235, 235, 235);
+
+    --violet-color: rgb(144, 59, 209);
+    --violet-color_20: rgba(144, 59, 209, 0.2);
+    --violet-color_40: rgba(144, 59, 209, 0.4);
+    --violet-color_80: rgba(144, 59, 209, 0.8);
+
+    --dark-gray-color: rgb(187, 187, 187);
+    --dark-gray-color_60: rgba(187, 187, 187, 0.6);
+    --dark-gray-color_30: rgba(187, 187, 187, 0.3);
+    --dark-gray-color_20: rgba(187, 187, 187, 0.2);
+    --light-gray-color: rgb(235, 235, 235);
+    --light-gray-color_15: rgba(235, 235, 235, 0.15);
+    --light-gray-color_10: rgba(235, 235, 235, 0.10);
+    --light-gray-color_0: rgba(235, 235, 235, 0);
+
+    --text-anchor-color: var(--dark-gray-color_60);
+    --text-color: var(--white);
+    --text-opacity: 0.4;
+
+    --link-progect-color: var(--white);
+
+
+    --backgroung-color-html: var(--black-color-070707);
+    --pronounced-background-color: var(--black-color-030303);
+    --cards-background-color: var(--black-color-0A0A0A);
+    --can-scroll-background-color: var(--light-gray-color);
+
+    --violet-drop-box-shadow_20: 0px 0px 21px 4px var(--violet-color_20);
+    --violet-inner-box-shadow: 0px 0px 13px -3px var(--violet-color) inset;
+
+    --drop-box-shadow_15: 0px 0px 21px 4px var(--light-gray-color_15);
+    --drop-box-shadow_10: 0px 0px 21px 4px var(--light-gray-color_10);
+    --linear-can-scroll: 0deg, var(--black-color-070707_0), var(--backgroung-color-html), var(--black-color-070707_0);
+    --linear-section-name: 180deg, var(--light-gray-color), var(--black-color-070707_0);
+
+    --border: 1px solid var(--dark-gray-color_20);
+    --violet-border: 1px solid var(--violet-color_20);
+
+    --cursor-border: 2px solid white;
+}
+
+.lightstyle {
+    --text-anchor-color: var(--black);
+    --text-color: var(--black);
+    --text-opacity: 0.6;
+
+    --link-progect-color: var(--black);
+
+
+    --backgroung-color-html: var(--light-gray-color);
+    --pronounced-background-color: var(--dark-white-color_EBEBEB);
+    --cards-background-color: var(--dark-white-color_EBEBEB);
+    --can-scroll-background-color: var(--black-color-070707);
+
+    --drop-box-shadow_15: 0px 0px 21px 4px var(--black-color-070707_15);
+    --drop-box-shadow_10: 0px 0px 21px 4px var(--black_10);
+
+    --linear-can-scroll: 0deg, var(--light-gray-color_0), var(--backgroung-color-html), var(--light-gray-color_0);
+    --linear-section-name: 180deg, var(--black-color-070707), var(--light-gray-color);
+
+    --border: 1px solid var(--black_20);
+    --cursor-border: 2px solid black;
+
+
+}
