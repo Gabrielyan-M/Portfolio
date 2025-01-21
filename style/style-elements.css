@@ -780,7 +780,33 @@ header{
     opacity: 0.3;
 }
 
+.lnik-copied {
+    display: flex;
+    top: 30px;
+}
 
+.link-copied-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+    background-color: var(--pronounced-background-color);
+    border: var(--border);
+    border-radius: 100px;
+
+    box-shadow: var(--violet-drop-box-shadow_20);
+    -moz-box-shadow: var(--violet-drop-box-shadow_20);
+    -webkit-box-shadow: var(--violet-drop-box-shadow_20);
+
+}
+
+.link-copied-container p {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: var(--montserrat-weight-Medium);
+
+}
 
 
 
