@@ -117,6 +117,8 @@
     --border: 1px solid var(--dark-gray-color_20);
     --violet-border: 1px solid var(--violet-color_20);
 
+    --copy-contact-svg: url(../media/contacts-media/copy-contact-svg.svg);
+
     --cursor-border: 2px solid white;
 }
 
@@ -140,6 +142,10 @@
     --linear-section-name: 180deg, var(--black-color-070707), var(--light-gray-color);
 
     --border: 1px solid var(--black_20);
+
+    --copy-contact-svg: url(../media/contacts-media/dark-copy-contact-svg.svg);
+
+
     --cursor-border: 2px solid black;
 
 
