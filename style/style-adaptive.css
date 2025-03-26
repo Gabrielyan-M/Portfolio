@@ -389,6 +389,11 @@
         width: 20px;
         height: 20px;
     }
+
+    .link-copied-container {
+        height: 40px;
+    }
+    
 }
 
 @media screen and (max-width: 490px) {
