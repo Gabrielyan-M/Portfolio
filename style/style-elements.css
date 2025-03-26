@@ -803,7 +803,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 200px;
-    height: 70px;
+    height: 40px;
     background-color: var(--pronounced-background-color);
     border: var(--border);
     border-radius: 100px;
