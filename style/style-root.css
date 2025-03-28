@@ -120,6 +120,22 @@
     --copy-contact-svg: url(../media/contacts-media/copy-contact-svg.svg);
 
     --cursor-border: 2px solid white;
+
+    /* color -> mini project  \/ */
+    --project-bacground-color: rgb(19, 19, 19);
+    --section-bacground-color: rgb(0, 0, 0);
+    --heading-color: rgb(128, 128, 128);
+    --text-color: white;    
+    --delete-button-bacground-color: rgb(187, 187, 187);
+    --start-button: rgba(64, 191, 92, 0.5);
+    --stop-button: rgba(191, 64, 64, 0.5);
+
+    --svg-element: white;
+
+
+
+
+
 }
 
 .lightstyle {
@@ -148,5 +164,15 @@
 
     --cursor-border: 2px solid black;
 
+    
+    /* color -> mini project  \/ */
+    --project-bacground-color: var(--white);
+    --section-bacground-color: rgb(222, 222, 222);
+    --heading-color: var(--black_60);
+    --text-color: var(--black);
+    --start-button: rgba(64, 191, 92, 0.8);
+    --stop-button: rgba(191, 64, 64, 0.8);
+
+    --svg-element: black;
 
 }
