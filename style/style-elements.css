@@ -425,7 +425,13 @@ header{
 .projects-cards-block {
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin: 120px 0px 60px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .projects-cards-container {
@@ -715,7 +721,7 @@ header{
     background-color: var(--pronounced-background-color);
     box-shadow: var(--drop-box-shadow_10);
     -moz-box-shadow: var(--drop-box-shadow_10);
-    -webkit-box-shadow: var(--drop-box-shadow_10);
+    --webkit-box-shadow: var(--drop-box-shadow_10);
     border-radius: 60px;
     transform: translateY(20px);
     transition: 0.3s linear;
@@ -724,8 +730,10 @@ header{
 .card-link-contact:active {
     box-shadow: var(--violet-inner-box-shadow);
     -moz-box-shadow: var(--violet-inner-box-shadow);
-    -webkit-box-shadow: var(--violet-inner-box-shadow);
+    --webkit-box-shadow: var(--violet-inner-box-shadow);
 }
+
+
 
 .card-link-contact::before {
     content: '';
@@ -753,9 +761,9 @@ header{
 
 @media (hover: hover) {
     .card-link-contact:hover {
-        box-shadow: var(--violet-inner-box-shadow);
-        -moz-box-shadow: var(--violet-inner-box-shadow);
-        -webkit-box-shadow: var(--violet-inner-box-shadow);
+        box-shadow: var(--violet-drop-box-shadow_20);
+        -moz-box-shadow: var(--violet-drop-box-shadow_20);
+        --webkit-box-shadow: var(--violet-drop-box-shadow_20);
     }
 
     .card-link-contact:hover::after {
@@ -820,12 +828,6 @@ header{
     font-weight: var(--montserrat-weight-Medium);
 
 }
-
-
-
-
-
-
 
 
 
