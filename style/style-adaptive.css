@@ -393,7 +393,41 @@
     .link-copied-container {
         height: 40px;
     }
-    
+
+
+
+
+
+    /* mini projects */
+
+    .mini-project .header {
+        height: 45px;
+    }
+
+    .mini-project-container {
+        padding: 20px;
+    }
+
+    .mini-project .header-container > h1 {
+        font-size: 1.25rem;
+    }
+
+    .form-block input, 
+    .time-text {
+        height: 65px;
+        font-size: 1.5rem;
+    }
+
+    .form-time input[type="submit"],
+    .button-stop-timer {
+        width: 50%;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    .notification {
+        width: 280px;
+    }
 }
 
 @media screen and (max-width: 490px) {
