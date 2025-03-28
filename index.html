@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="style/style-root.css">
     <link class="link-stylesheet" rel="stylesheet" href="style/style-elements.css">
+    <link class="link-stylesheet" rel="stylesheet" href="style/style-mini-projects.css">
+    <link class="link-stylesheet" rel="stylesheet" href="style/style-notification.css">
+    
     <link class="link-stylesheet" rel="stylesheet" href="style/style-adaptive.css">
 
     <script src="script/loadingDOM.js" type="module"></script>
@@ -38,7 +41,7 @@
                         <div class="change-buttons-block">
                             <div class="change-buttons-container">
 
-                                <button class="change-button change-theme-button cursorOff">
+                                <button type="button" class="change-button change-theme-button cursorOff" aria-label="Переключить тему">
                                     <div class="change-container">
                                         <div class="sun-svg themeSVG theme-active">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,250 +105,271 @@
                     <h2>Projects</h2>
                 </div>
                 <div class="projects-cards-block">
-                    <div class="projects-cards-container">
-
-                        <div class="card">
-                            <div class="card-container">
-                                <div class="image-card">
-                                    <img src="media/cards-media/sneakers-store.png" alt="Sneakers store">
-                                </div>
-                                
-                                <!-- project 2 -->
-                                <div class="description-card">
-                                    <div class="text-card">
-                                        <a href="https://gabrielyan-m.github.io/Shop-market/">Sneaker store</a>
-                                        <p>(landing page)</p>
-                                        <a href="/" tabindex="-1" style="pointer-events: none; text-decoration: none;">
-                                            A store for buying sneakers
-                                        </a>
-                                    </div>
-                                    <div class="resources-block">
-                                        <ul>
-                                            <li>
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.75006 31.5L4.50006 3.375H31.5001L29.2501 31.5L18.0001 34.875L6.75006 31.5Z" fill="#E44D26"/>
-                                                    <path d="M29.2501 5.625H18.0001V33.1875L27.0001 30.375L29.2501 5.625Z" fill="#F16529"/>
-                                                    <path d="M10.6876 19.6875L9.56256 9H27.0001L26.4376 12.375H12.9376L13.5001 16.3125H25.8751L24.7501 27L18.0001 29.25L11.2501 27L10.6876 21.375H14.0626L14.6251 24.1875L18.0001 25.3125L21.3751 24.1875L21.9376 19.6875H10.6876Z" fill="white"/>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.63982 30.6011L4.11307 2.25H31.8871L29.3569 30.5966L17.9832 33.75L6.63982 30.6011Z" fill="#1572B6"/>
-                                                    <path d="M18.0001 31.3402L27.1913 28.7921L29.3536 4.5686H18.0001V31.3402Z" fill="#33A9DC"/>
-                                                    <path d="M18.0001 14.8399H22.6013L22.9186 11.2793H18.0001V7.80188H18.0124H26.7188L26.6356 8.7345L25.7817 18.3173H18.0001V14.8399Z" fill="white"/>
-                                                    <path d="M18.0214 23.8703L18.0057 23.8748L14.1334 22.8285L13.8859 20.0554H12.0038H10.3951L10.8822 25.515L18.0045 27.4928L18.0214 27.4883V23.8703Z" fill="#EBEBEB"/>
-                                                    <path d="M22.3054 18.1699L21.8869 22.8263L18.0091 23.8725V27.4905L25.1371 25.515L25.1899 24.9278L25.7941 18.1699H22.3054Z" fill="white"/>
-                                                    <path d="M18.0124 7.80188V9.96188V11.2703V11.2793H9.62445H9.6132L9.54345 10.4974L9.38483 8.7345L9.30157 7.80188H18.0124Z" fill="#EBEBEB"/>
-                                                    <path d="M18.0001 14.8398V16.9998V18.3082V18.3172H14.1874H14.1762L14.1064 17.5353L13.9489 15.7725L13.8657 14.8398H18.0001Z" fill="#EBEBEB"/>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M33.7501 2.25H2.25006V33.75H33.7501V2.25Z" fill="#FFCA28"/>
-                                                    <path d="M21.3751 28.4489L23.6942 26.9142C23.876 27.4852 25.027 28.8414 26.4809 28.8414C27.9347 28.8414 28.6097 28.0474 28.6097 27.5209C28.6097 26.0863 27.1252 25.5805 26.4121 25.3376C26.2958 25.298 26.2002 25.2654 26.1347 25.2369C26.1011 25.2223 26.0503 25.2028 25.9852 25.1779C25.1922 24.875 22.2664 23.7572 22.2664 20.517C22.2664 16.9481 25.7106 16.5377 26.4895 16.5377C26.999 16.5377 29.4491 16.6002 30.6692 18.8931L28.4192 20.4635C27.926 19.4642 27.1065 19.1341 26.602 19.1341C25.3559 19.1341 25.0962 20.0476 25.0962 20.4635C25.0962 21.6304 26.4502 22.1534 27.5933 22.5949C27.8924 22.7105 28.177 22.8204 28.4192 22.9349C29.6654 23.5237 31.5001 24.4874 31.5001 27.5209C31.5001 29.0403 30.2257 31.5002 27.0174 31.5002C22.7077 31.5002 21.5654 28.9128 21.3751 28.4489Z" fill="#3E3E3E"/>
-                                                    <path d="M10.1251 28.7536L12.5423 27.2197C12.7317 27.7904 13.4678 28.8428 14.5356 28.8428C15.6036 28.8428 16.1502 27.7459 16.1502 27.2197V16.8752H19.123V27.2197C19.1712 28.6466 18.3799 31.5002 14.8874 31.5002C11.6764 31.5002 10.3415 29.5919 10.1251 28.7536Z" fill="#3E3E3E"/>
-                                                </svg>
-                                            </li>
-                                        </ul>
-
-                                        <a href="https://gabrielyan-m.github.io/Shop-market/" class="link-project cursorOff">
-                                            <div class="link-project-container">
-        
-                                                <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
-                                                </svg>
-                                                <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
-                                                </svg>
-                                                <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
-                                                </svg>
-                                                    
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="projects-container">
+                        
+                        <div class="projects-cards-container">
     
-                                <a href="https://gabrielyan-m.github.io/Shop-market/" class="link-project cursorOff">
-                                    <div class="link-project-container">
-
-                                        <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
-                                        </svg>
-                                        <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
-                                        </svg>
-                                        <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
-                                        </svg>
-                                            
+                            <div class="card">
+                                <div class="card-container">
+                                    <div class="image-card">
+                                        <img src="media/cards-media/sneakers-store.png" alt="Sneakers store">
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-container">
-                                <div class="image-card">
-                                    <img src="media/cards-media/panteon-img.png" alt="Leasing From D&M">
-                                </div>
-                                
-                                <!-- project 2 -->
-                                <div class="description-card">
-                                    <div class="text-card">
-                                        <a href="https://gabrielyan-m.github.io/Panteon/">Fitness Club Pantheon</a>
-                                        <p>(landing page)</p>
-                                        <a href="https://www.figma.com/file/6zMmYzEZPkpYFcTi0YXYno/Panteon-(Copy)?type=design&node-id=0%3A1&mode=design&t=QPAq857RIo48P8Ck-1">
-                                            Pantheon website layout
-                                        </a>
-                                    </div>
-                                    <div class="resources-block">
-                                        <ul>
-                                            <li>
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.75006 31.5L4.50006 3.375H31.5001L29.2501 31.5L18.0001 34.875L6.75006 31.5Z" fill="#E44D26"/>
-                                                    <path d="M29.2501 5.625H18.0001V33.1875L27.0001 30.375L29.2501 5.625Z" fill="#F16529"/>
-                                                    <path d="M10.6876 19.6875L9.56256 9H27.0001L26.4376 12.375H12.9376L13.5001 16.3125H25.8751L24.7501 27L18.0001 29.25L11.2501 27L10.6876 21.375H14.0626L14.6251 24.1875L18.0001 25.3125L21.3751 24.1875L21.9376 19.6875H10.6876Z" fill="white"/>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.63982 30.6011L4.11307 2.25H31.8871L29.3569 30.5966L17.9832 33.75L6.63982 30.6011Z" fill="#1572B6"/>
-                                                    <path d="M18.0001 31.3402L27.1913 28.7921L29.3536 4.5686H18.0001V31.3402Z" fill="#33A9DC"/>
-                                                    <path d="M18.0001 14.8399H22.6013L22.9186 11.2793H18.0001V7.80188H18.0124H26.7188L26.6356 8.7345L25.7817 18.3173H18.0001V14.8399Z" fill="white"/>
-                                                    <path d="M18.0214 23.8703L18.0057 23.8748L14.1334 22.8285L13.8859 20.0554H12.0038H10.3951L10.8822 25.515L18.0045 27.4928L18.0214 27.4883V23.8703Z" fill="#EBEBEB"/>
-                                                    <path d="M22.3054 18.1699L21.8869 22.8263L18.0091 23.8725V27.4905L25.1371 25.515L25.1899 24.9278L25.7941 18.1699H22.3054Z" fill="white"/>
-                                                    <path d="M18.0124 7.80188V9.96188V11.2703V11.2793H9.62445H9.6132L9.54345 10.4974L9.38483 8.7345L9.30157 7.80188H18.0124Z" fill="#EBEBEB"/>
-                                                    <path d="M18.0001 14.8398V16.9998V18.3082V18.3172H14.1874H14.1762L14.1064 17.5353L13.9489 15.7725L13.8657 14.8398H18.0001Z" fill="#EBEBEB"/>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M33.7501 2.25H2.25006V33.75H33.7501V2.25Z" fill="#FFCA28"/>
-                                                    <path d="M21.3751 28.4489L23.6942 26.9142C23.876 27.4852 25.027 28.8414 26.4809 28.8414C27.9347 28.8414 28.6097 28.0474 28.6097 27.5209C28.6097 26.0863 27.1252 25.5805 26.4121 25.3376C26.2958 25.298 26.2002 25.2654 26.1347 25.2369C26.1011 25.2223 26.0503 25.2028 25.9852 25.1779C25.1922 24.875 22.2664 23.7572 22.2664 20.517C22.2664 16.9481 25.7106 16.5377 26.4895 16.5377C26.999 16.5377 29.4491 16.6002 30.6692 18.8931L28.4192 20.4635C27.926 19.4642 27.1065 19.1341 26.602 19.1341C25.3559 19.1341 25.0962 20.0476 25.0962 20.4635C25.0962 21.6304 26.4502 22.1534 27.5933 22.5949C27.8924 22.7105 28.177 22.8204 28.4192 22.9349C29.6654 23.5237 31.5001 24.4874 31.5001 27.5209C31.5001 29.0403 30.2257 31.5002 27.0174 31.5002C22.7077 31.5002 21.5654 28.9128 21.3751 28.4489Z" fill="#3E3E3E"/>
-                                                    <path d="M10.1251 28.7536L12.5423 27.2197C12.7317 27.7904 13.4678 28.8428 14.5356 28.8428C15.6036 28.8428 16.1502 27.7459 16.1502 27.2197V16.8752H19.123V27.2197C19.1712 28.6466 18.3799 31.5002 14.8874 31.5002C11.6764 31.5002 10.3415 29.5919 10.1251 28.7536Z" fill="#3E3E3E"/>
-                                                </svg>
-                                            </li>
-                                        </ul>
-
-                                        <a href="https://gabrielyan-m.github.io/Panteon/" class="link-project cursorOff">
-                                            <div class="link-project-container">
-        
-                                                <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
-                                                </svg>
-                                                <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
-                                                </svg>
-                                                <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
-                                                </svg>
-                                                    
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                                    
+                                    <!-- project 2 -->
+                                    <div class="description-card">
+                                        <div class="text-card">
+                                            <a href="https://gabrielyan-m.github.io/Shop-market/">Sneaker store</a>
+                                            <p>(landing page)</p>
+                                            <a href="/" tabindex="-1" style="pointer-events: none; text-decoration: none;">
+                                                A store for buying sneakers
+                                            </a>
+                                        </div>
+                                        <div class="resources-block">
+                                            <ul>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75006 31.5L4.50006 3.375H31.5001L29.2501 31.5L18.0001 34.875L6.75006 31.5Z" fill="#E44D26"/>
+                                                        <path d="M29.2501 5.625H18.0001V33.1875L27.0001 30.375L29.2501 5.625Z" fill="#F16529"/>
+                                                        <path d="M10.6876 19.6875L9.56256 9H27.0001L26.4376 12.375H12.9376L13.5001 16.3125H25.8751L24.7501 27L18.0001 29.25L11.2501 27L10.6876 21.375H14.0626L14.6251 24.1875L18.0001 25.3125L21.3751 24.1875L21.9376 19.6875H10.6876Z" fill="white"/>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.63982 30.6011L4.11307 2.25H31.8871L29.3569 30.5966L17.9832 33.75L6.63982 30.6011Z" fill="#1572B6"/>
+                                                        <path d="M18.0001 31.3402L27.1913 28.7921L29.3536 4.5686H18.0001V31.3402Z" fill="#33A9DC"/>
+                                                        <path d="M18.0001 14.8399H22.6013L22.9186 11.2793H18.0001V7.80188H18.0124H26.7188L26.6356 8.7345L25.7817 18.3173H18.0001V14.8399Z" fill="white"/>
+                                                        <path d="M18.0214 23.8703L18.0057 23.8748L14.1334 22.8285L13.8859 20.0554H12.0038H10.3951L10.8822 25.515L18.0045 27.4928L18.0214 27.4883V23.8703Z" fill="#EBEBEB"/>
+                                                        <path d="M22.3054 18.1699L21.8869 22.8263L18.0091 23.8725V27.4905L25.1371 25.515L25.1899 24.9278L25.7941 18.1699H22.3054Z" fill="white"/>
+                                                        <path d="M18.0124 7.80188V9.96188V11.2703V11.2793H9.62445H9.6132L9.54345 10.4974L9.38483 8.7345L9.30157 7.80188H18.0124Z" fill="#EBEBEB"/>
+                                                        <path d="M18.0001 14.8398V16.9998V18.3082V18.3172H14.1874H14.1762L14.1064 17.5353L13.9489 15.7725L13.8657 14.8398H18.0001Z" fill="#EBEBEB"/>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M33.7501 2.25H2.25006V33.75H33.7501V2.25Z" fill="#FFCA28"/>
+                                                        <path d="M21.3751 28.4489L23.6942 26.9142C23.876 27.4852 25.027 28.8414 26.4809 28.8414C27.9347 28.8414 28.6097 28.0474 28.6097 27.5209C28.6097 26.0863 27.1252 25.5805 26.4121 25.3376C26.2958 25.298 26.2002 25.2654 26.1347 25.2369C26.1011 25.2223 26.0503 25.2028 25.9852 25.1779C25.1922 24.875 22.2664 23.7572 22.2664 20.517C22.2664 16.9481 25.7106 16.5377 26.4895 16.5377C26.999 16.5377 29.4491 16.6002 30.6692 18.8931L28.4192 20.4635C27.926 19.4642 27.1065 19.1341 26.602 19.1341C25.3559 19.1341 25.0962 20.0476 25.0962 20.4635C25.0962 21.6304 26.4502 22.1534 27.5933 22.5949C27.8924 22.7105 28.177 22.8204 28.4192 22.9349C29.6654 23.5237 31.5001 24.4874 31.5001 27.5209C31.5001 29.0403 30.2257 31.5002 27.0174 31.5002C22.7077 31.5002 21.5654 28.9128 21.3751 28.4489Z" fill="#3E3E3E"/>
+                                                        <path d="M10.1251 28.7536L12.5423 27.2197C12.7317 27.7904 13.4678 28.8428 14.5356 28.8428C15.6036 28.8428 16.1502 27.7459 16.1502 27.2197V16.8752H19.123V27.2197C19.1712 28.6466 18.3799 31.5002 14.8874 31.5002C11.6764 31.5002 10.3415 29.5919 10.1251 28.7536Z" fill="#3E3E3E"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
     
-                                <a href="https://gabrielyan-m.github.io/Panteon/" class="link-project cursorOff">
-                                    <div class="link-project-container">
-
-                                        <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
-                                        </svg>
-                                        <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
-                                        </svg>
-                                        <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
-                                        </svg>
-                                            
+                                            <a href="https://gabrielyan-m.github.io/Shop-market/" class="link-project cursorOff">
+                                                <div class="link-project-container">
+            
+                                                    <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
+                                                    </svg>
+                                                    <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
+                                                    </svg>
+                                                    <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
+                                                    </svg>
+                                                        
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div class="card">
-                            <div class="card-container">
-                                <div class="image-card">
-                                    <img src="media/cards-media/leasing-img.png" alt="Leasing From D&M">
-                                </div>
-                                <div class="description-card">
-                                    <div class="text-card">
-                                        <a href="https://gabrielyan-m.github.io/DM-Leasing-PF/">
-                                            Leasing From D&M
-                                        </a>
-                                        <p>(multi-page)</p>
-                                        <a href="https://www.figma.com/file/qLg8jUOgSwaoHWFBdLwhLf/lease-cars?type=design&node-id=0%3A1&mode=design&t=IOaqVYU5sIwO5G7v-1">
-                                            A website layout dedicated
-                                            <br>to purchasing a car on lease.
-                                        </a>
-                                    </div>
-                                    <div class="resources-block">
-                                        <ul>
-                                            <li>
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.75006 31.5L4.50006 3.375H31.5001L29.2501 31.5L18.0001 34.875L6.75006 31.5Z" fill="#E44D26"/>
-                                                    <path d="M29.2501 5.625H18.0001V33.1875L27.0001 30.375L29.2501 5.625Z" fill="#F16529"/>
-                                                    <path d="M10.6876 19.6875L9.56256 9H27.0001L26.4376 12.375H12.9376L13.5001 16.3125H25.8751L24.7501 27L18.0001 29.25L11.2501 27L10.6876 21.375H14.0626L14.6251 24.1875L18.0001 25.3125L21.3751 24.1875L21.9376 19.6875H10.6876Z" fill="white"/>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.63982 30.6011L4.11307 2.25H31.8871L29.3569 30.5966L17.9832 33.75L6.63982 30.6011Z" fill="#1572B6"/>
-                                                    <path d="M18.0001 31.3402L27.1913 28.7921L29.3536 4.5686H18.0001V31.3402Z" fill="#33A9DC"/>
-                                                    <path d="M18.0001 14.8399H22.6013L22.9186 11.2793H18.0001V7.80188H18.0124H26.7188L26.6356 8.7345L25.7817 18.3173H18.0001V14.8399Z" fill="white"/>
-                                                    <path d="M18.0214 23.8703L18.0057 23.8748L14.1334 22.8285L13.8859 20.0554H12.0038H10.3951L10.8822 25.515L18.0045 27.4928L18.0214 27.4883V23.8703Z" fill="#EBEBEB"/>
-                                                    <path d="M22.3054 18.1699L21.8869 22.8263L18.0091 23.8725V27.4905L25.1371 25.515L25.1899 24.9278L25.7941 18.1699H22.3054Z" fill="white"/>
-                                                    <path d="M18.0124 7.80188V9.96188V11.2703V11.2793H9.62445H9.6132L9.54345 10.4974L9.38483 8.7345L9.30157 7.80188H18.0124Z" fill="#EBEBEB"/>
-                                                    <path d="M18.0001 14.8398V16.9998V18.3082V18.3172H14.1874H14.1762L14.1064 17.5353L13.9489 15.7725L13.8657 14.8398H18.0001Z" fill="#EBEBEB"/>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M33.7501 2.25H2.25006V33.75H33.7501V2.25Z" fill="#FFCA28"/>
-                                                    <path d="M21.3751 28.4489L23.6942 26.9142C23.876 27.4852 25.027 28.8414 26.4809 28.8414C27.9347 28.8414 28.6097 28.0474 28.6097 27.5209C28.6097 26.0863 27.1252 25.5805 26.4121 25.3376C26.2958 25.298 26.2002 25.2654 26.1347 25.2369C26.1011 25.2223 26.0503 25.2028 25.9852 25.1779C25.1922 24.875 22.2664 23.7572 22.2664 20.517C22.2664 16.9481 25.7106 16.5377 26.4895 16.5377C26.999 16.5377 29.4491 16.6002 30.6692 18.8931L28.4192 20.4635C27.926 19.4642 27.1065 19.1341 26.602 19.1341C25.3559 19.1341 25.0962 20.0476 25.0962 20.4635C25.0962 21.6304 26.4502 22.1534 27.5933 22.5949C27.8924 22.7105 28.177 22.8204 28.4192 22.9349C29.6654 23.5237 31.5001 24.4874 31.5001 27.5209C31.5001 29.0403 30.2257 31.5002 27.0174 31.5002C22.7077 31.5002 21.5654 28.9128 21.3751 28.4489Z" fill="#3E3E3E"/>
-                                                    <path d="M10.1251 28.7536L12.5423 27.2197C12.7317 27.7904 13.4678 28.8428 14.5356 28.8428C15.6036 28.8428 16.1502 27.7459 16.1502 27.2197V16.8752H19.123V27.2197C19.1712 28.6466 18.3799 31.5002 14.8874 31.5002C11.6764 31.5002 10.3415 29.5919 10.1251 28.7536Z" fill="#3E3E3E"/>
-                                                </svg>
-                                            </li>
-                                        </ul>
-
-                                        <a href="https://gabrielyan-m.github.io/DM-Leasing-PF/" class="link-project cursorOff">
-                                            <div class="link-project-container">
         
-                                                <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
-                                                </svg>
-                                                <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
-                                                </svg>
-                                                <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
-                                                </svg>
-                                                    
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                                    <a href="https://gabrielyan-m.github.io/Shop-market/" class="link-project cursorOff">
+                                        <div class="link-project-container">
     
-                                <a href="https://gabrielyan-m.github.io/DM-Leasing-PF/" class="link-project cursorOff">
-                                    <div class="link-project-container">
-
-                                        <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
-                                        </svg>
-                                        <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
-                                        </svg>
-                                        <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
-                                        </svg>
-                                            
-                                    </div>
-                                </a>
+                                            <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
+                                            </svg>
+                                            <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
+                                            </svg>
+                                            <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
+                                            </svg>
+                                                
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
+    
+                            <div class="card">
+                                <div class="card-container">
+                                    <div class="image-card">
+                                        <img src="media/cards-media/panteon-img.png" alt="Leasing From D&M">
+                                    </div>
+                                    
+                                    <!-- project 2 -->
+                                    <div class="description-card">
+                                        <div class="text-card">
+                                            <a href="https://gabrielyan-m.github.io/Panteon/">Fitness Club Pantheon</a>
+                                            <p>(landing page)</p>
+                                            <a href="https://www.figma.com/file/6zMmYzEZPkpYFcTi0YXYno/Panteon-(Copy)?type=design&node-id=0%3A1&mode=design&t=QPAq857RIo48P8Ck-1">
+                                                Pantheon website layout
+                                            </a>
+                                        </div>
+                                        <div class="resources-block">
+                                            <ul>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75006 31.5L4.50006 3.375H31.5001L29.2501 31.5L18.0001 34.875L6.75006 31.5Z" fill="#E44D26"/>
+                                                        <path d="M29.2501 5.625H18.0001V33.1875L27.0001 30.375L29.2501 5.625Z" fill="#F16529"/>
+                                                        <path d="M10.6876 19.6875L9.56256 9H27.0001L26.4376 12.375H12.9376L13.5001 16.3125H25.8751L24.7501 27L18.0001 29.25L11.2501 27L10.6876 21.375H14.0626L14.6251 24.1875L18.0001 25.3125L21.3751 24.1875L21.9376 19.6875H10.6876Z" fill="white"/>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.63982 30.6011L4.11307 2.25H31.8871L29.3569 30.5966L17.9832 33.75L6.63982 30.6011Z" fill="#1572B6"/>
+                                                        <path d="M18.0001 31.3402L27.1913 28.7921L29.3536 4.5686H18.0001V31.3402Z" fill="#33A9DC"/>
+                                                        <path d="M18.0001 14.8399H22.6013L22.9186 11.2793H18.0001V7.80188H18.0124H26.7188L26.6356 8.7345L25.7817 18.3173H18.0001V14.8399Z" fill="white"/>
+                                                        <path d="M18.0214 23.8703L18.0057 23.8748L14.1334 22.8285L13.8859 20.0554H12.0038H10.3951L10.8822 25.515L18.0045 27.4928L18.0214 27.4883V23.8703Z" fill="#EBEBEB"/>
+                                                        <path d="M22.3054 18.1699L21.8869 22.8263L18.0091 23.8725V27.4905L25.1371 25.515L25.1899 24.9278L25.7941 18.1699H22.3054Z" fill="white"/>
+                                                        <path d="M18.0124 7.80188V9.96188V11.2703V11.2793H9.62445H9.6132L9.54345 10.4974L9.38483 8.7345L9.30157 7.80188H18.0124Z" fill="#EBEBEB"/>
+                                                        <path d="M18.0001 14.8398V16.9998V18.3082V18.3172H14.1874H14.1762L14.1064 17.5353L13.9489 15.7725L13.8657 14.8398H18.0001Z" fill="#EBEBEB"/>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M33.7501 2.25H2.25006V33.75H33.7501V2.25Z" fill="#FFCA28"/>
+                                                        <path d="M21.3751 28.4489L23.6942 26.9142C23.876 27.4852 25.027 28.8414 26.4809 28.8414C27.9347 28.8414 28.6097 28.0474 28.6097 27.5209C28.6097 26.0863 27.1252 25.5805 26.4121 25.3376C26.2958 25.298 26.2002 25.2654 26.1347 25.2369C26.1011 25.2223 26.0503 25.2028 25.9852 25.1779C25.1922 24.875 22.2664 23.7572 22.2664 20.517C22.2664 16.9481 25.7106 16.5377 26.4895 16.5377C26.999 16.5377 29.4491 16.6002 30.6692 18.8931L28.4192 20.4635C27.926 19.4642 27.1065 19.1341 26.602 19.1341C25.3559 19.1341 25.0962 20.0476 25.0962 20.4635C25.0962 21.6304 26.4502 22.1534 27.5933 22.5949C27.8924 22.7105 28.177 22.8204 28.4192 22.9349C29.6654 23.5237 31.5001 24.4874 31.5001 27.5209C31.5001 29.0403 30.2257 31.5002 27.0174 31.5002C22.7077 31.5002 21.5654 28.9128 21.3751 28.4489Z" fill="#3E3E3E"/>
+                                                        <path d="M10.1251 28.7536L12.5423 27.2197C12.7317 27.7904 13.4678 28.8428 14.5356 28.8428C15.6036 28.8428 16.1502 27.7459 16.1502 27.2197V16.8752H19.123V27.2197C19.1712 28.6466 18.3799 31.5002 14.8874 31.5002C11.6764 31.5002 10.3415 29.5919 10.1251 28.7536Z" fill="#3E3E3E"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+    
+                                            <a href="https://gabrielyan-m.github.io/Panteon/" class="link-project cursorOff">
+                                                <div class="link-project-container">
+            
+                                                    <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
+                                                    </svg>
+                                                    <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
+                                                    </svg>
+                                                    <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
+                                                    </svg>
+                                                        
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+        
+                                    <a href="https://gabrielyan-m.github.io/Panteon/" class="link-project cursorOff">
+                                        <div class="link-project-container">
+    
+                                            <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
+                                            </svg>
+                                            <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
+                                            </svg>
+                                            <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
+                                            </svg>
+                                                
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <div class="card-container">
+                                    <div class="image-card">
+                                        <img src="media/cards-media/leasing-img.png" alt="Leasing From D&M">
+                                    </div>
+                                    <div class="description-card">
+                                        <div class="text-card">
+                                            <a href="https://gabrielyan-m.github.io/DM-Leasing-PF/">
+                                                Leasing From D&M
+                                            </a>
+                                            <p>(multi-page)</p>
+                                            <a href="https://www.figma.com/file/qLg8jUOgSwaoHWFBdLwhLf/lease-cars?type=design&node-id=0%3A1&mode=design&t=IOaqVYU5sIwO5G7v-1">
+                                                A website layout dedicated
+                                                <br>to purchasing a car on lease.
+                                            </a>
+                                        </div>
+                                        <div class="resources-block">
+                                            <ul>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.75006 31.5L4.50006 3.375H31.5001L29.2501 31.5L18.0001 34.875L6.75006 31.5Z" fill="#E44D26"/>
+                                                        <path d="M29.2501 5.625H18.0001V33.1875L27.0001 30.375L29.2501 5.625Z" fill="#F16529"/>
+                                                        <path d="M10.6876 19.6875L9.56256 9H27.0001L26.4376 12.375H12.9376L13.5001 16.3125H25.8751L24.7501 27L18.0001 29.25L11.2501 27L10.6876 21.375H14.0626L14.6251 24.1875L18.0001 25.3125L21.3751 24.1875L21.9376 19.6875H10.6876Z" fill="white"/>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.63982 30.6011L4.11307 2.25H31.8871L29.3569 30.5966L17.9832 33.75L6.63982 30.6011Z" fill="#1572B6"/>
+                                                        <path d="M18.0001 31.3402L27.1913 28.7921L29.3536 4.5686H18.0001V31.3402Z" fill="#33A9DC"/>
+                                                        <path d="M18.0001 14.8399H22.6013L22.9186 11.2793H18.0001V7.80188H18.0124H26.7188L26.6356 8.7345L25.7817 18.3173H18.0001V14.8399Z" fill="white"/>
+                                                        <path d="M18.0214 23.8703L18.0057 23.8748L14.1334 22.8285L13.8859 20.0554H12.0038H10.3951L10.8822 25.515L18.0045 27.4928L18.0214 27.4883V23.8703Z" fill="#EBEBEB"/>
+                                                        <path d="M22.3054 18.1699L21.8869 22.8263L18.0091 23.8725V27.4905L25.1371 25.515L25.1899 24.9278L25.7941 18.1699H22.3054Z" fill="white"/>
+                                                        <path d="M18.0124 7.80188V9.96188V11.2703V11.2793H9.62445H9.6132L9.54345 10.4974L9.38483 8.7345L9.30157 7.80188H18.0124Z" fill="#EBEBEB"/>
+                                                        <path d="M18.0001 14.8398V16.9998V18.3082V18.3172H14.1874H14.1762L14.1064 17.5353L13.9489 15.7725L13.8657 14.8398H18.0001Z" fill="#EBEBEB"/>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M33.7501 2.25H2.25006V33.75H33.7501V2.25Z" fill="#FFCA28"/>
+                                                        <path d="M21.3751 28.4489L23.6942 26.9142C23.876 27.4852 25.027 28.8414 26.4809 28.8414C27.9347 28.8414 28.6097 28.0474 28.6097 27.5209C28.6097 26.0863 27.1252 25.5805 26.4121 25.3376C26.2958 25.298 26.2002 25.2654 26.1347 25.2369C26.1011 25.2223 26.0503 25.2028 25.9852 25.1779C25.1922 24.875 22.2664 23.7572 22.2664 20.517C22.2664 16.9481 25.7106 16.5377 26.4895 16.5377C26.999 16.5377 29.4491 16.6002 30.6692 18.8931L28.4192 20.4635C27.926 19.4642 27.1065 19.1341 26.602 19.1341C25.3559 19.1341 25.0962 20.0476 25.0962 20.4635C25.0962 21.6304 26.4502 22.1534 27.5933 22.5949C27.8924 22.7105 28.177 22.8204 28.4192 22.9349C29.6654 23.5237 31.5001 24.4874 31.5001 27.5209C31.5001 29.0403 30.2257 31.5002 27.0174 31.5002C22.7077 31.5002 21.5654 28.9128 21.3751 28.4489Z" fill="#3E3E3E"/>
+                                                        <path d="M10.1251 28.7536L12.5423 27.2197C12.7317 27.7904 13.4678 28.8428 14.5356 28.8428C15.6036 28.8428 16.1502 27.7459 16.1502 27.2197V16.8752H19.123V27.2197C19.1712 28.6466 18.3799 31.5002 14.8874 31.5002C11.6764 31.5002 10.3415 29.5919 10.1251 28.7536Z" fill="#3E3E3E"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+    
+                                            <a href="https://gabrielyan-m.github.io/DM-Leasing-PF/" class="link-project cursorOff">
+                                                <div class="link-project-container">
+            
+                                                    <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
+                                                    </svg>
+                                                    <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
+                                                    </svg>
+                                                    <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
+                                                    </svg>
+                                                        
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+        
+                                    <a href="https://gabrielyan-m.github.io/DM-Leasing-PF/" class="link-project cursorOff">
+                                        <div class="link-project-container">
+    
+                                            <svg class="left-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17691 2.38508C1.35462 3.47151 1.35462 6.42928 3.17691 7.51571C3.54394 7.73452 3.95241 7.84886 4.3671 7.84886L11.3207 7.84886L11.3207 9.90088L4.3671 9.90088C3.65882 9.90088 2.96116 9.70559 2.33429 9.33186C-0.778116 7.47627 -0.778116 2.42451 2.33429 0.568924C2.96116 0.19519 3.65882 -9.56319e-05 4.3671 -9.55423e-05L11.3207 -9.37094e-05L11.3207 2.05192L4.3671 2.05192C3.95241 2.05192 3.54394 2.16626 3.17691 2.38508Z" fill="var(--link-progect-color)"/>
+                                            </svg>
+                                            <svg class="center-part-link" width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52821 2.03952H0.471603V0.0593262H9.52821V2.03952Z" fill="var(--link-progect-color)"/>
+                                            </svg>
+                                            <svg class="right-part-link" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82299 7.6148C10.6453 6.52837 10.6453 3.5706 8.82299 2.48417C8.45596 2.26535 8.04748 2.15102 7.63279 2.15102L0.679154 2.15101L0.679154 0.0989985L7.63279 0.0989996C8.34107 0.0989997 9.03873 0.294286 9.6656 0.668021C12.778 2.5236 12.778 7.57537 9.6656 9.43095C9.03873 9.80469 8.34107 9.99997 7.63279 9.99997L0.679154 9.99997L0.679154 7.94796L7.63279 7.94796C8.04748 7.94796 8.45596 7.83362 8.82299 7.6148Z" fill="var(--link-progect-color)"/>
+                                            </svg>
+                                                
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+    
                         </div>
+    
+                        <div class="projects-cards-container mini-card-container">
+    
+                            
+                            <div class="card mini-card cursorOff" data-name-project="timer">
+                                <h1>Timer</h1>
+                            </div>
 
+                            <!-- <div class="card mini-card cursorOff" data-name-project="to-do-list">
+                                <h1>To-do list</h1>
+                            </div>
+
+                            <div class="card mini-card cursorOff" data-name-project="calculator">
+                                <h1>Calculator</h1>
+                            </div> -->
+    
+                        </div>
+    
                     </div>
                 </div>
             </div>
@@ -403,6 +427,112 @@
             </div>
         </div>
     </section>
+
+    <section class="mini-project-section mini-project-timer" data-project="timer">
+        <div class="mini-project">
+            <div class="mini-project-container">
+
+                <div class="project">
+                    <div class="project-container">
+
+                        <div class="header">
+                            <div class="header-container">
+                                <h1>Timer</h1>
+                                <button class="close-project-button cursorOff" type="button">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-time">
+                            <div class="form-time-container">
+
+                                <div class="form-block">
+                                    <form id="formTime">
+                                        <input class="cursorOff" type="number" placeholder="h." data-js-hours>
+                                        <input class="cursorOff" type="number" placeholder="min." data-js-minutes>
+                                        <input class="cursorOff" type="number" placeholder="sec." data-js-seconds>
+                                    </form>
+                                </div>
+                                
+                                <div class="time-view-block">
+                                    <div class="time-view-container">
+                                        <div class="time-text time-hours">00</div>
+                                        <div class="time-text time-minutes">00</div>
+                                        <div class="time-text time-seconds">00</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="timer-buttons-block">
+                                <input class="button-submit-timer cursorOff" type="submit" value="Start" form="formTime">
+                                <button class="button-stop-timer" type="button">Stop</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="mini-project-section" data-project="to-do-list">
+        <div class="mini-project">
+            <div class="mini-project-container">
+
+                <div class="project">
+                    <div class="project-container">
+
+                        <div class="header">
+                            <div class="header-container">
+                                <h1>To-do list</h1>
+                                <button class="close-project-button cursorOff" type="button">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </button>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="mini-project-section" data-project="calculator">
+        <div class="mini-project">
+            <div class="mini-project-container">
+
+                <div class="project">
+                    <div class="project-container">
+
+                        <div class="header">
+                            <div class="header-container">
+                                <h1>Calculator</h1>
+                                <button class="close-project-button cursorOff" type="button">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </button>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
 </main>
 
 <footer>
@@ -436,12 +566,43 @@
     </div>
 </div>
 
+<div class="notification notification-timer" data-project-notification="timer">
+    <div class="notification-container">
+
+        <div class="notification-timer-svg">
+            
+            <svg width="94" height="101" viewBox="0 0 94 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M47 54H45.25V55.0104L46.125 55.5155L47 54ZM48.75 27C48.75 26.0335 47.9665 25.25 47 25.25C46.0335 25.25 45.25 26.0335 45.25 27H48.75ZM67.7756 68.0155C68.6126 68.4988 69.6829 68.212 70.1662 67.375C70.6494 66.538 70.3626 65.4677 69.5256 64.9845L67.7756 68.0155ZM90.25 54C90.25 77.8863 70.8863 97.25 47 97.25V100.75C72.8193 100.75 93.75 79.8193 93.75 54H90.25ZM47 97.25C23.1137 97.25 3.75 77.8863 3.75 54H0.25C0.25 79.8193 21.1807 100.75 47 100.75V97.25ZM3.75 54C3.75 30.1137 23.1137 10.75 47 10.75V7.25C21.1807 7.25 0.25 28.1807 0.25 54H3.75ZM47 10.75C70.8863 10.75 90.25 30.1137 90.25 54H93.75C93.75 28.1807 72.8193 7.25 47 7.25V10.75ZM87.25 54C87.25 76.2295 69.2295 94.25 47 94.25V97.75C71.1625 97.75 90.75 78.1625 90.75 54H87.25ZM47 94.25C24.7705 94.25 6.75 76.2295 6.75 54H3.25C3.25 78.1625 22.8375 97.75 47 97.75V94.25ZM6.75 54C6.75 31.7705 24.7705 13.75 47 13.75V10.25C22.8375 10.25 3.25 29.8375 3.25 54H6.75ZM47 13.75C69.2295 13.75 87.25 31.7705 87.25 54H90.75C90.75 29.8375 71.1625 10.25 47 10.25V13.75ZM48.75 54V27H45.25V54H48.75ZM46.125 55.5155L67.7756 68.0155L69.5256 64.9845L47.875 52.4845L46.125 55.5155ZM50.25 7C50.25 8.79493 48.7949 10.25 47 10.25V13.75C50.7279 13.75 53.75 10.7279 53.75 7H50.25ZM47 10.25C45.2051 10.25 43.75 8.79493 43.75 7H40.25C40.25 10.7279 43.2721 13.75 47 13.75V10.25ZM43.75 7C43.75 5.20507 45.2051 3.75 47 3.75V0.25C43.2721 0.25 40.25 3.27208 40.25 7H43.75ZM47 3.75C48.7949 3.75 50.25 5.20507 50.25 7H53.75C53.75 3.27208 50.7279 0.25 47 0.25V3.75ZM26.25 14C26.25 16.3472 24.3472 18.25 22 18.25V21.75C26.2802 21.75 29.75 18.2802 29.75 14H26.25ZM22 18.25C19.6528 18.25 17.75 16.3472 17.75 14H14.25C14.25 18.2802 17.7198 21.75 22 21.75V18.25ZM17.75 14C17.75 11.6528 19.6528 9.75 22 9.75V6.25C17.7198 6.25 14.25 9.71979 14.25 14H17.75ZM22 9.75C24.3472 9.75 26.25 11.6528 26.25 14H29.75C29.75 9.71979 26.2802 6.25 22 6.25V9.75ZM76.25 14C76.25 16.3472 74.3472 18.25 72 18.25V21.75C76.2802 21.75 79.75 18.2802 79.75 14H76.25ZM72 18.25C69.6528 18.25 67.75 16.3472 67.75 14H64.25C64.25 18.2802 67.7198 21.75 72 21.75V18.25ZM67.75 14C67.75 11.6528 69.6528 9.75 72 9.75V6.25C67.7198 6.25 64.25 9.71979 64.25 14H67.75ZM72 9.75C74.3472 9.75 76.25 11.6528 76.25 14H79.75C79.75 9.71979 76.2802 6.25 72 6.25V9.75ZM45.25 15V21H48.75V15H45.25ZM86 52.25H80V55.75H86V52.25ZM48.75 93V87H45.25V93H48.75ZM8 55.75H14V52.25H8V55.75ZM73.7626 24.7626L69.7626 28.7626L72.2374 31.2374L76.2374 27.2374L73.7626 24.7626ZM76.2374 80.7626L72.2374 76.7626L69.7626 79.2374L73.7626 83.2374L76.2374 80.7626ZM20.2374 83.2374L24.2374 79.2374L21.7626 76.7626L17.7626 80.7626L20.2374 83.2374ZM17.7626 27.2374L21.7626 31.2374L24.2374 28.7626L20.2374 24.7626L17.7626 27.2374Z" 
+                fill="var(--violet-color)"/>
+            </svg>
+        </div>
+
+        <p>Timer</p>
+
+        <div class="buttons-block">
+            <button class="button-new-timer cursorOff" type="button">
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <button class="button-close-timer-notification cursorOff" type="button">
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+
+        </div>
+
+    </div>
+</div>
 
     <div class="cursor"></div>
 
 <script src="script/changeTheme.js" type="module"></script>
 <script src="script/burgerMenu.js" type="module"></script>
 <script src="script/cupyClick.js" type="module"></script>
+
+<script src="script/openMiniProjects.js" type="module"></script>
+<script src="script/miniPrigect-timer.js" type="module"></script>
+<script src="script/push-projects.js" type="module"></script>
 
 </body>
 
