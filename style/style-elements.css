@@ -51,13 +51,12 @@ button {
     transform: translateX(-50%) translateY(-50%);
     z-index: 10000;
     transition: opacity 0.15s;
-
+    mix-blend-mode: exclusion;
 }
 
 .cursor-active {
     opacity: 0;
 }
-
 
 .container-header-section {
     display: flex;
@@ -143,6 +142,7 @@ header{
     transform: translateY(-10px);
     transition: 0.5s linear; 
 }
+
 .anchor-button > p {
     font-size: 2.97vh;
     opacity: var(--text-opacity);
