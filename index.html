@@ -767,5 +767,27 @@
 <script src="script/miniPrigect-timer.js" type="module"></script>
 <script src="script/push-projects.js" type="module"></script>
 
+
+    <script>
+        fetch('https://api.open-meteo.com/v1/forecast?latitude=&longitude=37.6173&current_weather=true')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.log('Ошибка:', error);
+    });
+
+fetch('https://geolocation-db.com/json/')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.log('Ошибка:', error);
+    });
+
+    </script>
+
 </body>
 </html>
