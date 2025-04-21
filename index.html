@@ -769,25 +769,37 @@
 
 
     <script>
-fetch('https://api.open-meteo.com/v1/forecast?latitude=55.7558&longitude=37.6173&current_weather=true')
+function current_weatherIP(latitudeValue, longitudeValue, IP) {
+
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitudeValue}&longitude=${longitudeValue}&current_weather=true`
+    fetch(url)
     .then(res => res.json())
     .then(data => {
-        console.log(data);
+        const temperature = data.current_weather.temperature
+        const cityName = IP.city
+        
+        const text = `city: ${cityName}, temperature: ${temperature}`
+
+        console.log(text);
+
     })
     .catch(error => {
         console.log('Ошибка:', error);
     });
+}
+
+
+    
+
 
 fetch('https://geolocation-db.com/json/')
     .then(res => res.json())
     .then(data => {
-        console.log(data);
+        current_weatherIP(data.latitude, data.longitude, data)        
     })
     .catch(error => {
         console.log('Ошибка:', error);
     });
-
-
     </script>
 
 </body>
