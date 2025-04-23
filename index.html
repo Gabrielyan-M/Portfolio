@@ -21,7 +21,6 @@
     <script src="script/anchorButton.js" type="module"></script>
 
 </head>
-    
 <body>
     
     <div class="container-header-section">
@@ -512,8 +511,6 @@
                                 </div>
                             </div> -->
     
-
-
                         </div>
     
                         <div class="projects-cards-container mini-card-container">
@@ -521,6 +518,10 @@
                             
                             <div class="card mini-card cursorOff" data-name-project="timer">
                                 <h1>Timer</h1>
+                            </div>
+
+                            <div class="card mini-card cursorOff" data-name-project="weather">
+                                <h1>Weather</h1>
                             </div>
 
                             <!-- <div class="card mini-card cursorOff" data-name-project="to-do-list">
@@ -640,7 +641,64 @@
         </div>
     </section>
 
-    <!-- <section class="mini-project-section" data-project="to-do-list">
+    <section class="mini-project-section mini-project-weather" data-project="weather">
+        <div class="mini-project">
+            <div class="mini-project-container">
+
+                <div class="project">
+                    <div class="project-container">
+
+                        <div class="header">
+                            <div class="header-container">
+                                <h1>Weather</h1>
+                                <button class="close-project-button cursorOff" type="button">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <section class="weather-info">
+                            <p class="location-text">Current location</p>
+
+                            <h2 data-js-city-name></h2>
+
+                            <h3 data-js-temperature></h3>
+
+                            <p data-js-wind-speed></p>
+
+
+                            <div class="weather-forecast-block">
+                                <div class="weather-forecast-container">
+
+                                    <div class="weather-forecast-card-block">
+                                        <div class="weather-forecast-card-container">
+                                            <p data-js-day-weather>Today</p>
+    
+                                            <h3 data-js-forecast-temperature>17 C</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="weather-forecast-card-block">
+                                        <div class="weather-forecast-card-container">
+                                            <p data-js-day-weather>The day after tomorrow</p>
+                                            <h3 data-js-forecast-temperature>17 C</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </section>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- 
+    <section class="mini-project-section mini-project-wether" data-project="to-do-list">
         <div class="mini-project">
             <div class="mini-project-container">
 
@@ -661,29 +719,6 @@
 
 
 
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="mini-project-section" data-project="calculator">
-        <div class="mini-project">
-            <div class="mini-project-container">
-
-                <div class="project">
-                    <div class="project-container">
-
-                        <div class="header">
-                            <div class="header-container">
-                                <h1>Calculator</h1>
-                                <button class="close-project-button cursorOff" type="button">
-                                    <div class="line"></div>
-                                    <div class="line"></div>
-                                </button>
-                            </div>
-                        </div>
 
 
 
@@ -757,7 +792,7 @@
     </div>
 </div>
 
-    <div class="cursor"></div>
+<div class="cursor"></div>
 
 <script src="script/changeTheme.js" type="module"></script>
 <script src="script/burgerMenu.js" type="module"></script>
@@ -765,42 +800,12 @@
 
 <script src="script/openMiniProjects.js" type="module"></script>
 <script src="script/miniPrigect-timer.js" type="module"></script>
+<script src="script/miniPrigect-weather.js" type="module"></script>
 <script src="script/push-projects.js" type="module"></script>
 
-
-    <script>
-function current_weatherIP(latitudeValue, longitudeValue, IP) {
-
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitudeValue}&longitude=${longitudeValue}&current_weather=true`
-    fetch(url)
-    .then(res => res.json())
-    .then(data => {
-        const temperature = data.current_weather.temperature
-        const cityName = IP.city
-        
-        const text = `city: ${cityName}, temperature: ${temperature}`
-
-        console.log(text);
-
-    })
-    .catch(error => {
-        console.log('Ошибка:', error);
-    });
-}
-
-
-    
-
-
-fetch('https://geolocation-db.com/json/')
-    .then(res => res.json())
-    .then(data => {
-        current_weatherIP(data.latitude, data.longitude, data)        
-    })
-    .catch(error => {
-        console.log('Ошибка:', error);
-    });
-    </script>
-
 </body>
+
+
+
 </html>
+
