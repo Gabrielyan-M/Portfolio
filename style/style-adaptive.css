@@ -448,6 +448,7 @@
 
     .mini-project-weather .mini-project-container {
         padding: 20px 20px 0px;
+        height: 80dvh;
     }
 
     .weather-info {
