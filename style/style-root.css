@@ -123,6 +123,7 @@
 
     /* color -> mini project  \/ */
     --project-bacground-color: rgb(19, 19, 19);
+    --weather-bacground-color: rgba(19, 19, 19, 0.7);
     --section-bacground-color: rgb(0, 0, 0);
     --heading-color: rgb(128, 128, 128);
     --text-color: white;    
@@ -167,6 +168,7 @@
     
     /* color -> mini project  \/ */
     --project-bacground-color: var(--white);
+    --weather-bacground-color: rgba(255, 255, 255, 0.7);
     --section-bacground-color: rgb(222, 222, 222);
     --heading-color: var(--black_60);
     --text-color: var(--black);
