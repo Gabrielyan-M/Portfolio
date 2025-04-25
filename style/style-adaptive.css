@@ -434,7 +434,11 @@
         width: 280px;
     }
 
-
+    .weather-sun-svg {
+        width: 100%;
+        bottom: -70px;
+        left: -10px;
+    }
 
     .mini-project-weather .mini-project {
         max-width: 390px;
