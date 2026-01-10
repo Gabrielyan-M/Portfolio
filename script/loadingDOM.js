@@ -69,29 +69,12 @@ document.addEventListener('DOMContentLoaded', () => {
             listSkills.forEach(skill => visibleRange(skill))  
             cardLinkContact.forEach(card => visibleRange(card))
             visibleRange(footerBottom)
-
-
-
-
-
-
-
         }, 2000);
-
-
-
-
-
-
-
-
-
-
-
 
     }
 
 })
+
 
 
 
