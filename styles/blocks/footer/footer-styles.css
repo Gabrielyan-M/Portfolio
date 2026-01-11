@@ -1,0 +1,403 @@
+@import url("../../root-styles.css");
+
+footer {
+      position: relative;
+      width: 100%;
+      padding-bottom: 20px;
+      background-color: black;
+}
+
+/* mobile */
+.footer-block.mobile {
+      display: none;
+      background-color: #000000;
+}
+
+.footer-block.mobile {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
+
+}
+
+.footer-block.mobile .conatcts-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+}
+
+.footer-block.mobile .contacts-block {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+}
+/* x */
+
+.footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      background-color: #000000;
+
+      padding: 0vw 3vw 4vw;
+}
+
+.footer-links-block {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      width: 100%;
+      background-color: var(--dark-color);
+}
+
+.button-scroll-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer h2, 
+footer p, 
+.servises-footer a,
+footer .number-block a, .number-block span a {
+      color: var(--light-text-color);
+}
+
+
+footer h2 {
+      visibility: hidden;
+      transform: translateY(50%);
+      opacity: 0;
+
+      font-size: clamp(1.25rem, 0.125rem + 3vw, 2rem);
+      margin-bottom: clamp(40px, 3.2vw, 56px);
+
+      transition: transform 0.75s, opacity 0.75;
+}
+
+footer h2.visible {
+      visibility: visible;
+      transform: translateY(0%);
+      opacity: 1;
+}
+
+.servises-footer ul  {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+}
+
+.servises-footer ul a span  {
+      font-size: clamp(1rem, 0.25rem + 2vw, 1.5rem);
+}
+
+.servises-footer ul a {
+      visibility: hidden;
+      transform: translateY(50%);
+      opacity: 0;
+      
+      transition: transform 0.75s, opacity 0.75;
+}
+.servises-footer ul  a.visible {
+      visibility: visible;
+      transform: translateY(0%);
+      opacity: 1;
+}
+
+footer .contacts-block {
+    gap: 30px;
+}
+
+footer p,
+footer ul a,
+footer .number-block a, .number-block span a {
+      font-size: clamp(1rem, 0.25rem + 2vw, 1.5rem);
+}
+
+footer p > span,
+footer .text-info a{
+      font-size: clamp(0.875rem, 0.3125rem + 1.5vw, 1.25rem);
+      color: var(--add-color);
+}
+
+footer p,
+footer p span {
+      visibility: hidden;
+      transform: translateY(30px);
+      opacity: 0;
+      
+      transition: transform 0.75s, opacity 0.75s;
+}
+
+footer p.visible,
+footer p span.visible {
+      visibility: visible;
+      transform: translateY(0px);
+      opacity:1;
+}
+
+
+footer .number-block a svg,
+footer .contacts-block svg {
+      width: clamp(46px, 3vw, 60px);
+      height: clamp(46px, 3vw, 60px);
+}
+
+.block-in-footer {
+      width: 25vw;
+      max-width: 410px;
+      min-width: 390px;
+      margin-top: 20px;
+}
+
+.contacts-footer,
+.address-footer {
+      text-align: center;
+}
+
+footer .contacts-block .phone-number::before {
+    background-color: var(--light-text-color);
+}
+
+.contacts-svg-list.visible {
+    visibility: visible;
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.contacts-svg-list.visible li a svg {
+    visibility: visible;
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.address-footer p:nth-child(2) {
+      margin-bottom: 26px;
+}
+
+.footer-info {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--dark-color);
+      padding: 2vw 3vw 2vw;
+}
+
+.footer-info::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 1px;
+      background-color: var(--add-color);
+      opacity: 0.3;
+
+}
+
+.footer-info .text-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+
+.footer-info .text-info span {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      opacity: 0.7;
+}
+
+.footer-info .text-info span a {
+      position: relative;
+      color: var(--light-text-color);
+
+}
+
+.footer-info .text-info span a:nth-child(1)::before {
+      content: "";
+      position: absolute;
+      right: -10px;
+      width: 1px;
+      height: 100%;
+      background-color: var(--light-text-color);
+}
+
+.footer-info .text-info p,
+.footer-inf .text-info a {
+      font-size: clamp(0.8125rem, 0.1562rem + 1.75vw, 1.25rem);
+      color: var(--light-text-color);
+}
+
+
+
+
+
+/* adaptive */
+
+
+
+@media screen and (max-width: 1300px) {
+      .button-scroll-top {
+            width: 96px;
+            height: 96px;
+      }
+}
+
+
+@media screen and (max-width: 1300px) {
+      .footer-links-block {
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 80px;
+      }
+}
+
+@media screen and (max-width: 1000px) {
+
+      .footer-block.desktop {
+            display: none;
+      }
+
+      .footer-block.mobile {
+            display: flex;
+            gap: 34px;
+      }
+
+      .footer-block .conatcts-footer {
+            margin-top: 0px;
+      }
+
+      .footer-block .logo-block > svg {
+            width: 90px;
+            height: 30px;
+      }
+      
+      .button-scroll-top {
+            width: 88px;
+            height: 88px;
+      }
+      
+      .button-scroll-top > svg {
+            width: 88px;
+            height: 88px;
+      }
+
+      .footer-block.mobile .conatcts-footer {
+            gap: 34px;
+      }
+
+      .footer-block.mobile .conatcts-footer .contacts-block {
+            position: relative;
+      }
+
+      .footer-block.mobile .conatcts-footer .contacts-block::after,
+      .footer-block.mobile .conatcts-footer .contacts-block::before {
+            content: "";
+            position: absolute;
+            width: 100vw;
+            height: 1px;
+            background-color: var(--add-color);
+            opacity: 0.3;
+      }
+      .footer-block.mobile .conatcts-footer .contacts-block::after {
+            top: -17px;
+      }
+
+      .footer-block.mobile .conatcts-footer .contacts-block::before {
+            bottom: -17px;
+      }
+
+      .footer-block.mobile .text-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+      }
+
+      .footer-info::before {
+            content: unset;
+      }
+
+      .footer-block.mobile .footer-info span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .footer-info .text-info span a:nth-child(1)::before {
+            right: unset;
+            width: 100%;
+            bottom: -10px;
+            height: 1px;
+      }
+
+
+
+      .block-in-footer {
+            width: unset;
+            max-width: unset;
+            min-width: unset;
+      }
+
+      .footer-container {
+            padding: 10vw 0 10vw;
+            gap: 100px;
+      }
+
+      .servises-footer li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .servises-footer a {
+            text-align: center;
+      }
+
+      .contacts-block ul {
+            gap: 20px;
+      }
+
+      footer .number-block a svg, footer .contacts-block svg {
+            width: clamp(40px, 3vw, 60px);
+            height: clamp(40px, 3vw, 60px);
+      }
+}
+
+@media screen and (max-width: 800px) {
+      .button-scroll-top {
+            width: 76px;
+            height: 76px;
+      }
+
+      footer .contacts-block svg {
+            width: 36px;
+            height: 36px;
+      }
+
+      .contacts-block ul {
+            gap: 12px;
+      }
+}
+
+@media screen and (max-width: 370px) {
+      .footer-block.mobile .contacts-block {
+            flex-direction: column;
+      }
+
+      .footer-info .text-info p, .footer-inf .text-info a {
+            font-size: 0.75rem;
+      }
+}

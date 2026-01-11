@@ -1,0 +1,246 @@
+header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      background-color: black;
+      z-index: 11000;
+}
+
+.header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 2000px;
+      padding: clamp(20px, 2.78vh, 30px) clamp(30px, 3.125vw, 60px);
+}
+
+.logo-block{
+      visibility: hidden;
+      transform: translateX(-100%);
+      opacity: 0;
+      transition: transform 0.75s, opacity 0.75s;
+}
+
+.logo-block.visible{
+      visibility: visible;
+      transform: translateX(0%);
+      opacity: 1;
+}
+
+.logo-block:active > svg {
+      opacity: 0.85;
+}
+
+.navigation.menu.desktop {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+.phone-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+}
+
+.phone-number svg path {
+      transition: 0.22s;
+      opacity: 0.8;
+}
+
+.navigation.menu a,
+.phone-number {
+      position: relative;
+      color: white;
+      font-size: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
+}
+
+.navigation.menu a::before,
+.phone-number::before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      bottom: -2px;
+      right: 0px;
+      height: 2px;
+      border-radius: 20px;
+      background-color: white;
+      transition: width 0.22s;
+}
+
+.phone-number::before {
+      width: 30%;
+}
+
+.navigation.menu a,
+header .phone-number {
+      visibility: hidden;
+      opacity: 0;
+      transition: transform 0.75s, opacity 0.75s;
+}
+
+.navigation.menu a {
+      transform: translateX(100%);
+}
+
+header .phone-number {
+      transition: opacity 1.25s;
+}
+
+.navigation.menu a.visible,
+header .phone-number.visible {
+      visibility: visible;
+      transform: translateX(0%);
+      opacity: 1;
+}
+
+
+@media (hover: hover) {   
+      .navigation.menu a:hover::before  {
+            width: 40%;
+      }
+}
+
+@media (hover: none) {
+      .navigation.menu a:active::before  {
+            width: 40%;
+      }
+
+      .phone-number:hover::before {
+            width: 60%;
+      }
+}
+
+.navigation.menu ul {
+      display: flex;
+      flex-direction: row;
+      gap: clamp(25px, 2.1vw, 40px);
+}
+
+
+@media (hover: hover) {
+      .phone-number:hover svg path {
+            opacity: 1;
+      }
+}
+
+@media (hover: none) {
+     .phone-number:active svg path {
+            opacity: 1;
+      } 
+}
+
+
+/* mobile */
+.mobile-menu {
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+
+      width: 100vw;
+      height: 100vh;
+      padding: 10vh 0vw 0vh;
+      background-color: var(--dark-color-07);
+}
+
+.mobile-menu-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-self: center;
+      gap: 7vh;
+      background-color: var(--dark-color);
+}
+
+.mobile-menu .navigation.menu ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 4vh;
+}
+
+
+
+/* active */
+
+header.active {
+      position: fixed;
+      top: 0px;
+}
+
+header.active .mobile-menu {
+      display: flex;
+}
+
+
+
+/* adaptiv */
+
+@media screen and (max-width: 1500px) {
+      
+      .header-container {
+            padding: clamp(18px, 3.125vh, 25px) clamp(30px, 3.47vw, 50px);
+      }
+
+      .logo-block > svg {
+            width: 120px;
+            height: 40px;
+      }
+}
+
+@media screen and (max-width: 1400px) {
+      
+      .header-container {
+            padding: clamp(12px, 2.6vh, 20px) clamp(20px, 3.47vw, 50px);
+      }
+
+      .logo-block > svg {
+            width: 118px;
+            height: 40px;
+      }
+
+      .phone-number svg {
+            width: 32px;
+            height: 32px;
+      }
+}
+
+@media screen and (max-width: 1000px) {
+
+      .header-container {
+            padding: 12px 20px;
+      }
+      
+      .navigation.desktop,
+      .phone-number.desktop {
+            display: none;
+      }
+
+      .logo-block > svg {
+            width: 100px;
+            height: 34px;
+      }
+
+}
+
+@media screen and (max-width: 700px) {
+
+      .logo-block > svg {
+            width: 70px;
+            height: 24px;
+      }
+
+      .mobile-menu .navigation.menu ul {
+            gap: 5.5vh;
+      }
+
+      .navigation.menu a, .phone-number {
+            font-size: 20px;
+      }
+      
+
+}

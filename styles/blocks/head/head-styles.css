@@ -1,0 +1,144 @@
+.welcome-block  {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      height: 100dvh;
+}
+
+.welcome-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      gap: 10vh;
+
+      background-image: url('../../../media/images/head-background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+
+.welcome-container h1,
+.welcome-container p,
+.welcome-container span,
+.welcome-container button {
+      visibility: hidden;
+      transform: translateY(-80%);
+      opacity: 0;
+      transition: transform 0.75s, opacity 0.75s;
+
+      color: white;
+      text-align: center;
+      padding: 0px 20px;
+}
+
+.welcome-container h1.visible,
+.welcome-container p.visible,
+.welcome-container span.visible,
+.welcome-container button.visible {
+      visibility: visible;
+      transform: translateY(0%);
+      opacity: 1;
+}
+
+.welcome-container h1 {
+      font-size: clamp(1.75rem, 0.7692rem + 4.359vw, 6rem);
+}
+
+.welcome-container p,
+.welcome-container span {
+      font-size: clamp(0.875rem, 0.6154rem + 1.1538vw, 2rem);
+}
+
+.head-title { /* center-block */
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 8vh;
+}
+
+.present-block { /* center-block */
+       flex-direction: column;
+       gap: 20px;
+}
+
+.present-block button {
+      padding: 0.875em 1.5em;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid var(--light-color);
+      backdrop-filter: blur(15px);
+      border-radius: 200px;
+
+      font-size: clamp(0.875rem, 0.6154rem + 1.1538vw, 2rem);
+}
+
+.button-scroll-bottom {
+      position: absolute;
+      bottom: 20px;
+      
+      visibility: hidden;
+      opacity: 0;
+
+      transition: 0.22s, opacity 0.75s;
+}
+
+.button-scroll-bottom.visible {
+      visibility: visible;
+      opacity: 1;
+}
+
+.button-scroll-bottom svg path {
+      transform: translateY(0px);
+      transition:  0.22s;
+      
+}
+
+@media (hover: hover) {
+      .button-scroll-bottom:hover svg path:nth-child(2) {
+            transform: translateY(-3px);
+      }
+
+      .button-scroll-bottom:hover svg path:nth-child(3) {
+            transform: translateY(-8px);
+      }
+}
+
+@media (hover: none) {
+      .button-scroll-bottom:active svg path:nth-child(2) {
+            transform: translateY(-3px);
+      }
+
+      .button-scroll-bottom:active svg path:nth-child(3) {
+            transform: translateY(-8px);
+      }
+}
+
+
+
+@media screen and (max-width: 1400px) {
+      .button-scroll-bottom,
+      .button-scroll-bottom svg {
+            width: 96px;
+            height: 96px;
+      }
+}
+
+@media screen and (max-width: 1000px) {
+      .button-scroll-bottom,
+      .button-scroll-bottom svg {
+            width: 88px;
+            height: 88px;
+      }
+}
+
+@media screen and (max-width: 800px) {
+      .button-scroll-bottom,
+      .button-scroll-bottom svg {
+            width: 76px;
+            height: 76px;
+      }
+}

@@ -1,0 +1,89 @@
+@import url('./null-styles.css');
+@import url('./root-styles.css');
+
+
+/* header */
+@import url('./blocks/head/header-styles.css');
+@import url('./blocks/head/header-servise-style.css');
+
+/* head */
+@import url('./blocks/head/head-styles.css');
+
+/* about us */
+@import url('./blocks/main/aboutUs/aboutUs-styles.css');
+
+/* servises */
+@import url('./blocks/main/servises/services-styles.css');
+@import url('./blocks/main/servises/info-servise-styles.css');
+
+
+/* examples work */
+@import url('./blocks/main/works/examplesWork.css');
+
+/* stages work */
+@import url('./blocks/main/works/stagesWork.css');
+
+
+
+/* equipment */
+@import url('./blocks/main/equipment-styles.css');
+
+/* reviews */
+@import url('./blocks/main/reviews/reviews-styles.css');
+
+/* contacts-and-form */
+@import url('./blocks/main/contacts/contacts-styles.css');
+
+/* map */
+@import url('./map-styles.css');
+
+/* footer */
+@import url('./blocks/footer/footer-styles.css');
+
+
+
+
+
+
+/* all */
+@import url('./blocks/burger-button-styles.css');
+
+
+
+
+
+
+
+body.active {
+      height: 100vh;
+      overflow: hidden;
+}
+
+section {
+      width: 100vw;
+}
+
+.web-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+}
+
+.contacts-svg-list li a svg {
+      opacity: 0.8;
+      transition: 0.22s;
+}
+
+@media (hover: hover) {
+      .contacts-svg-list li a svg:hover {
+            opacity: 1;
+      }
+}
+
+@media (hover: none) {
+      .contacts-svg-list li a svg:active {
+            opacity: 1;
+      }
+}

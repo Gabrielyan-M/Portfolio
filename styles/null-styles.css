@@ -1,0 +1,68 @@
+@import url('./root-styles.css');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+html {
+    background-color: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    background-color: rgb(0, 0, 0);
+}
+
+.welcome-block {
+    background-color: #000000;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span {
+    font-family: 'Exo2';
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.66px;
+    list-style: none;
+    text-decoration-line: none;
+}
+
+h1 {
+    font-weight: var(--semiBold-font);
+}
+
+h2 {
+    font-size: clamp(2.5rem, 1.6923rem + 3.5897vw, 6rem);
+    font-weight: var(--bold-font);
+    text-align: center;
+}
+
+p,
+span {
+    font-weight: var(--regular-font);
+}
+
+
+button {
+    border: unset;
+    border-radius: unset;
+    background-color: unset;
+    padding: 0px;
+    font-weight: var(--regular-font)
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+

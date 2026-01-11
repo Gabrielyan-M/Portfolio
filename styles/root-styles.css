@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Exo2';
+    src: url('../styles/fonts/Exo2-Light.woff2') format('woff2'),
+        url('../styles/fonts/Exo2-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('../styles/fonts/Exo2-Regular.woff2') format('woff2'),
+        url('../styles/fonts/Exo2-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('../styles/fonts/Exo2-Medium.woff2') format('woff2'),
+        url('../styles/fonts/Exo2-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('../styles/fonts/Exo2-SemiBold.woff2') format('woff2'),
+        url('../styles/fonts/Exo2-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('../styles/fonts/Exo2-Bold.woff2') format('woff2'),
+        url('../styles/fonts/Exo2-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --light-font: 300;
+    --regular-font: normal;
+    --medium-font: 500;
+    --semiBold-font: 600;
+    --bold-font: 700;
+      
+    --dark-color: rgba(0, 0, 0, 1);
+    --light-color: rgba(255, 255, 255, 1);
+    --add-color: rgba(11, 102, 6, 1);
+
+    --dark-text-color: rgba(0, 0, 0, 1);
+    --light-text-color: rgba(255, 255, 255, 1);
+    --add-text-color: rgba(11, 102, 6, 1);
+
+    --border-green: 3px solid rgba(11, 102, 6, 0.5);
+}
+
+.center-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}

@@ -1,0 +1,24 @@
+.servise-id .welcome-block {
+      position: relative;
+      justify-content: space-between;
+      height: auto;
+}
+
+.servise-id .logo-block {
+      transform: translateY(0%);
+}
+
+.servise-id .welcome-block h1 {
+      visibility: hidden;
+      opacity: 0;
+
+      color: var(--light-color);
+      font-size: clamp(1.25rem, 0.9rem + 1.75vw, 3rem);
+
+      transition: opacity 0.75s;
+}
+
+.servise-id .welcome-block h1.visible {
+      visibility: visible;
+      opacity: 1;
+}
