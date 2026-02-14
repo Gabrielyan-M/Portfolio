@@ -2,8 +2,6 @@ const cursor = document.querySelector('.cursor')
 const cursorHover = document.querySelectorAll('.cursorOff')
 
 document.addEventListener('pointermove', (e) => {
-
-    console.log(e.pointerType)
     
     if (e.pointerType !== "touch") {
         cursor.style.display = 'block'
